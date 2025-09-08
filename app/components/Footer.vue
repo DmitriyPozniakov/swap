@@ -10,11 +10,11 @@
         <li>{{ $t("footer.link_5") }}</li>
       </ul>
       <div class="social">
-        <img src="/images/icons/social/discord.svg" alt="" />
-        <img src="/images/icons/social/steam.svg" alt="" />
-        <img src="/images/icons/social/instagram.svg" alt="" />
-        <img src="/images/icons/social/facebook.svg" alt="" />
-        <img src="/images/icons/social/x.svg" alt="" />
+        <img src="/images/discord.svg" alt="" />
+        <img src="/images/steam.svg" alt="" />
+        <img src="/images/instagram.svg" alt="" />
+        <img src="/images/facebook.svg" alt="" />
+        <img src="/images/x.svg" alt="" />
       </div>
     </div>
     <div class="line"></div>
