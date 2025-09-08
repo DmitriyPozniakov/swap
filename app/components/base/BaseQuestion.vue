@@ -56,7 +56,7 @@ onMounted(() => {
 }
 
 .question {
-  max-width: 95rem;
+   max-width: 110rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,7 +101,7 @@ onMounted(() => {
 }
 
 .answer {
-  max-width: 95rem;
+  max-width: 110rem;
   margin-top: 10px;
   padding: 16px;
   background-color: #121219;

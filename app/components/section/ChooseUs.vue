@@ -48,6 +48,7 @@ const { locale } = useI18n();
   font-size: 1.5rem;
   transition: all 0.3s ease;
   border-radius: 12px;
+  max-width: 100%;
 }
 
 .div1 {

@@ -40,8 +40,10 @@ button {
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
+  margin-bottom: 60px;
 }
+
 
 .base-button {
   padding: 12px 32px;
@@ -51,3 +53,4 @@ section {
   font-size: 1.8rem;
   font-weight: 700;
 }
+

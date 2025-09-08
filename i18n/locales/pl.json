@@ -1,14 +1,60 @@
 {
     "nav": {
-        "link_1": "NATYCHMIASTOWA SPRZEDAŻ",
+        "link_1": "SPRZEDAJ NATYCHMIAST",
         "link_2": "JAK TO DZIAŁA",
-        "link_3": "Często zadawane pytania"
+        "link_3": "FAQ"
+    },
+    "sections": {
+        "hero-section": {
+            "title": "Sprzedaj swoje przedmioty za natychmiastowe pieniądze",
+            "preTitle": "Bezpieczne, szybkie i proste transakcje — gwarancja najlepszych cen.",
+            "button": "SPRZEDAJ SKINY TERAZ"
+        },
+        "chooseUs": {
+            "first": {
+                "title": "Najlepsze ceny na rynku",
+                "preTitle": "Otrzymaj najwyższą wartość za swoje skiny."
+            },
+            "second": {
+                "title": "Bezpieczne transakcje",
+                "preTitle": "Zaufany system oparty na blockchainie."
+            },
+            "third": {
+                "title": "Zaufany system oparty na blockchainie.",
+                "preTitle": "Wybierz swoje skiny, sprawdź cenę, otrzymaj płatność."
+            },
+            "fourth": {
+                "title": "Profesjonalne wsparcie",
+                "preTitle": "Pomoc dostępna o każdej porze, gdy jej potrzebujesz."
+            }
+        },
+        "sell": {
+            "title": "Sprzedaj swoje skiny w trzech prostych krokach",
+            "steps": {
+                "step_1": "Połącz swoje konto Steam i wybierz skiny.",
+                "step_2": "Otrzymaj natychmiastową wycenę.",
+                "step_3": "Potwierdź transakcję i odbierz płatność."
+            }
+        },
+        "faq": {
+            "title": "Popularne pytania"
+        }
     },
     "footer": {
-        "link_1": "HOME",
-        "link_2": "HOW IT WORKS",
+        "link_1": "STRONA GŁÓWNA",
+        "link_2": "JAK TO DZIAŁA",
         "link_3": "FAQ",
-        "link_4": "PRIVACY POLICY",
-        "link_5": "TERMS OF SERVICE"
+        "link_4": "POLITYKA PRYWATNOŚCI",
+        "link_5": "REGULAMIN",
+        "bottom": {
+            "left": {
+                "powered": "WSPIERANE PRZEZ STEAM",
+                "not": "NIE POWIĄZANE Z VALVE CORP"
+            },
+            "right": {
+                "coopyright": "PRAWA AUTORSKIE © 2025 SWAPX.GG",
+                "all": "WSZYSTKIE PRAWA ZASTRZEŻONE"
+            }
+        }
     }
 }

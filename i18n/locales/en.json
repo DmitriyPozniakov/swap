@@ -29,7 +29,12 @@
             }
         },
         "sell": {
-            "title": "Sell your skins in three easy steps"
+            "title": "Sell your skins in three easy steps",
+            "steps": {
+                "step_1": "Connect your Steam account and choose your skins.",
+                "step_2": "Get an instant valuation.",
+                "step_3": "Confirm the transaction and receive your payment."
+            }
         },
         "faq": {
             "title": "Popular questions"

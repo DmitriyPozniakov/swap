@@ -74,14 +74,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
-import { useI18n } from "vue-i18n";
+import { ref, computed, onMounted } from "vue";
 
 const langMenuOpen = ref(false);
 const currencyMenuOpen = ref(false);
-
-const { locale } = useI18n();
 const currentCurrency = ref("PLN");
+
+const { locale, setLocale, locales } = useI18n();
 
 function toggleLangMenu() {
   langMenuOpen.value = !langMenuOpen.value;
@@ -91,8 +90,14 @@ function toggleCurrencyMenu() {
   currencyMenuOpen.value = !currencyMenuOpen.value;
 }
 
-function changeLanguage(lang: string) {
-  locale.value = lang;
+async function changeLanguage(lang: string) {
+  console.log(`Изменяем язык с ${locale.value} на ${lang}`); // Отладка
+  try {
+    await setLocale(lang);
+    console.log(`Язык успешно изменен на ${locale.value}`); // Отладка
+  } catch (error) {
+    console.error('Ошибка при изменении языка:', error);
+  }
   langMenuOpen.value = false;
 }
 
@@ -101,9 +106,16 @@ function changeCurrency(curr: string) {
   currencyMenuOpen.value = false;
 }
 
-const currentFlag = computed(() =>
-  locale.value === "en" ? "/images/flags/en.svg" : "/images/flags/pl.svg"
-);
+const currentFlag = computed(() => {
+  console.log('Текущий язык:', locale.value); // Отладка
+  return locale.value === "en" ? "/images/flags/en.svg" : "/images/flags/pl.svg";
+});
+
+// Отладочная информация
+onMounted(() => {
+  console.log('Доступные языки:', locales.value);
+  console.log('Текущий язык при монтировании:', locale.value);
+});
 </script>
 
 <style scoped>
