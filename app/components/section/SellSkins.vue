@@ -33,7 +33,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import LottiePlayer from "../LottiePlayer.vue";
 </script>
 
