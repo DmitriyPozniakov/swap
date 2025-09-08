@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --color-white: #e5e5e5;
+  --color-black: #090910;
+  --color-green: #48f955;
+  --color-gray: #77777a;
+  --color-violet: #9090af;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background: #090910;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+section {
+    padding: 20px;
+}
+
+.base-button {
+  padding: 12px 32px;
+  border-radius: 8px;
+  background: var(--color-green);
+  color: var(--color-black);
+  font-size: 1.8rem;
+  font-weight: 700;
+}

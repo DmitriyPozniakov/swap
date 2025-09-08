@@ -1,0 +1,55 @@
+{
+    "nav": {
+        "link_1": "INSTANT SELL",
+        "link_2": "HOW IT WORKS",
+        "link_3": "FAQ"
+    },
+    "sections": {
+        "hero-section": {
+            "title": "Sell your items for instant money",
+            "preTitle": "Safe, fast, and simple transactions — guaranteed best prices.",
+            "button": "SELL SKINS NOW"
+        },
+        "chooseUs": {
+            "first": {
+                "title": "Best market prices",
+                "preTitle": "Receive the highest value for your skins."
+            },
+            "second": {
+                "title": "Secure transactions",
+                "preTitle": "Trusted system powered by blockchain."
+            },
+            "third": {
+                "title": "Trusted system powered by blockchain.",
+                "preTitle": "Select your skins, check the price, get paid."
+            },
+            "fourth": {
+                "title": "Professional Support",
+                "preTitle": "Assistance available anytime for your needs."
+            }
+        },
+        "sell": {
+            "title": "Sell your skins in three easy steps"
+        },
+        "faq": {
+            "title": "Popular questions"
+        }
+    },
+    "footer": {
+        "link_1": "HOME",
+        "link_2": "HOW IT WORKS",
+        "link_3": "FAQ",
+        "link_4": "PRIVACY POLICY",
+        "link_5": "TERMS OF SERVICE",
+        "bottom": {
+            "left": {
+                "powered": "POWERED BY STEAM",
+                "not": "NOT AFFILIATED WITH VALVE CORP"
+            },
+            "right": {
+                "coopyright": "COPYRIGHT © 2025 SWAPX.GG",
+                "all": "ALL RIGHTS RESERVED"
+            }
+        }
+    }
+}
