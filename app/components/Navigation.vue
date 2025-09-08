@@ -320,7 +320,6 @@ onMounted(() => {
   transition: all 0.3s ease;
 }
 
-/* Mobile Menu Styles */
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
