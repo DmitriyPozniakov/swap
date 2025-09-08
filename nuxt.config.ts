@@ -7,11 +7,12 @@ export default defineNuxtConfig({
 
   i18n: {
     // lazy: false,
-    langDir: "locales/", 
+    langDir: "locales/",
     locales: [
       { code: "en", file: "en.json" },
       { code: "pl", file: "pl.json" },
     ],
     // defaultLocale: "en"
   },
+  ssr: false, // отключаем SSR
 });
