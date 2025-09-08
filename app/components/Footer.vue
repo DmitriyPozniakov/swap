@@ -41,7 +41,7 @@ import discordIcon from '/images/discord.svg'
 import steamIcon from '/images/steam.svg'
 import instagramIcon from '/images/instagram.svg'
 import facebookIcon from '/images/facebook.svg'
-import xIcon from '/images/x.svg'
+import xIcon from '/images/X.svg'
 </script>
 
 <style scoped>
