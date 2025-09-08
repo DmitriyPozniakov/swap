@@ -6,13 +6,13 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/i18n"],
 
   i18n: {
-    // lazy: false,
+    
     langDir: "locales/",
     locales: [
       { code: "en", file: "en.json" },
       { code: "pl", file: "pl.json" },
     ],
-    // defaultLocale: "en"
+    
   },
-  ssr: false, // отключаем SSR
+  ssr: false, 
 });
