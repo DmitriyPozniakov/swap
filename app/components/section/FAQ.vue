@@ -4,12 +4,9 @@
 
     <div class="wrapper">
       <BaseQuestion v-for="n in 10" :key="n">
-        <template #question> What is swapx.gg? </template>
+        <template #question> {{ $t("sections.faq.question") }} </template>
         <template #answer>
-          swapx.gg is a platform where you can instantly sell your CS2, Dota2,
-          and Rust skins for money or cryptocurrency. Our service makes skin
-          trading fast and simple, allowing you to quickly sell the skins you no
-          longer want.
+          {{ $t("sections.faq.answer") }}
         </template>
       </BaseQuestion>
     </div>
@@ -32,7 +29,7 @@ h3 {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 </style>

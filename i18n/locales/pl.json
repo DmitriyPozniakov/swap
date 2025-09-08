@@ -37,7 +37,9 @@
             }
         },
         "faq": {
-            "title": "Popularne pytania"
+            "title": "Popularne pytania",
+            "question": "Czym jest swapx.gg?",
+            "answer": "swapx.gg to platforma, na której możesz natychmiast sprzedać swoje skiny z CS2, Dota2 i Rust za pieniądze lub kryptowalutę. Nasza usługa sprawia, że handel skinami jest szybki i prosty, pozwalając Ci szybko sprzedać skiny, których już nie chcesz."
         }
     },
     "footer": {

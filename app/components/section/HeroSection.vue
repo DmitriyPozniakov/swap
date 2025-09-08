@@ -9,9 +9,9 @@
         </button>
       </div>
       <div class="right">
-        <img class="gun gun-1" src="/images/ak-47.png" alt="" />
-        <img class="gun gun-2" src="/images/pistol.png" alt="" />
-        <img class="gun gun-3" src="/images/knife.png" alt="" />
+        <img class="gun gun-1" src="/images/ak-47.svg" alt="" />
+        <img class="gun gun-2" src="/images/pistol.svg" alt="" />
+        <img class="gun gun-3" src="/images/knife.svg" alt="" />
       </div>
     </div>
   </section>
@@ -20,8 +20,9 @@
 <style scoped>
 section {
   padding-top: 100px;
-  min-height: 50rem;
+  min-height: 70rem;
   position: relative;
+  overflow: hidden;
 }
 h1 {
   font-size: clamp(3rem, 6vw, 6.4rem);
@@ -81,29 +82,30 @@ p {
   z-index: -1;
 }
 
- .gun {
+.gun {
   position: absolute;
   transition: all 0.3s ease;
-} 
+}
 
 .gun-1 {
-  top: 0;
-  left: 30%;
-  width: 50%;
-  transform: rotate(16deg);
-}
-.gun-2 {
-  bottom: 20%;
+  top: -200px;
   left: 15%;
-  width: 25%;
-  transform: scaleX(-1) rotate(15deg);
+  width: 90%;
+  /* transform: rotate(16deg); */
+}
+
+.gun-2 {
+  bottom: 5%;
+  left: 0%;
+  width: 45%;
+  /* transform: scaleX(-1) rotate(15deg); */
   animation-delay: 0.5s;
 }
 .gun-3 {
   bottom: 0;
   right: 30%;
-  width: 20%;
-  transform: rotate(-165deg);
+  width: 30%;
+  /* transform: rotate(-165deg); */
   animation-delay: 1s;
 }
 
@@ -130,19 +132,19 @@ p {
   }
 
   .gun-1 {
-    top: 0;
+    top: -15%;
     right: 0;
-    width: 60%;
+    width: 100%;
   }
   .gun-2 {
-    top: 40%;
-    left: 5%;
-    width: 35%;
+    top: 0%;
+    left: -20%;
+    width: 80%;
   }
   .gun-3 {
-    bottom: 20%;
+    bottom: 5%;
     right: 20%;
-    width: 30%;
+    width: 40%;
   }
 }
 </style>
