@@ -15,7 +15,7 @@
         <p>{{ $t("sections.chooseUs.third.preTitle") }}</p>
       </div>
       <div class="div4">
-        <img src="/images/icons/fullDay.svg" alt="">
+        <img src="/images/icons/fullDay.svg" alt="" />
         <h2>{{ $t("sections.chooseUs.fourth.title") }}</h2>
         <p>{{ $t("sections.chooseUs.fourth.preTitle") }}</p>
       </div>
@@ -45,10 +45,19 @@ const { locale } = useI18n();
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   transition: all 0.3s ease;
   border-radius: 12px;
   max-width: 100%;
+}
+
+.parent > div h2 {
+  font-size: 3.2rem;
+}
+
+.parent > div:not(.div3) h2,
+.parent > div:not(.div3) p {
+  max-width: 23rem;
 }
 
 .div1 {
@@ -82,15 +91,19 @@ const { locale } = useI18n();
   grid-row-start: 2;
   background-color: #121219;
   background-image: url("/images/circle.svg");
-  background-position: right -110px bottom -110px;
+  background-position: right -80px bottom -90px;
   background-repeat: no-repeat;
   background-size: contain;
 
   color: var(--color-white);
 
-  padding: 30px;
+  padding: 60px;
   align-items: flex-start !important;
   justify-content: flex-start !important;
+}
+
+.div3 p {
+  max-width: 30rem;
 }
 
 .div4 {
@@ -105,20 +118,30 @@ const { locale } = useI18n();
 .div4::before {
   content: "24/7";
   position: absolute;
-  left: -10px;          
-  bottom: -43px;        
+  left: -10px;
+  bottom: -43px;
   font-family: Impact, sans-serif;
   font-size: 20rem;
   font-weight: 400;
   opacity: 0.1;
-  pointer-events: none; 
-  user-select: none;  
+  pointer-events: none;
+  user-select: none;
 }
+
+
 
 @media (max-width: 768px) {
   .parent {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
+  }
+
+  .parent > div h2 {
+    font-size: 2.4rem;
+  }
+
+  .div3 {
+    padding: 30px;
   }
 
   .div2,

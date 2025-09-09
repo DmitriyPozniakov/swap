@@ -5,29 +5,56 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
-import lottie from "lottie-web";
+import { onMounted, onBeforeUnmount, ref } from "vue";
+import lottie, { AnimationItem } from "lottie-web";
 
 const props = defineProps<{
   animationFile: string; // путь до data.json
   loop?: boolean;
-  autoplay?: boolean;
-}>();
+}>()
 
 const container = ref<HTMLDivElement | null>(null);
+let animation: AnimationItem | null = null;
+let observer: IntersectionObserver | null = null;
 
 onMounted(() => {
   if (container.value) {
-    lottie.loadAnimation({
+    animation = lottie.loadAnimation({
       container: container.value,
       renderer: "svg",
       loop: props.loop ?? true,
-      autoplay: props.autoplay ?? true,
+      autoplay: false,
       path: props.animationFile,
       rendererSettings: {
         imagePreserveAspectRatio: "xMidYMid slice",
       },
     });
+
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (animation) {
+            if (entry.isIntersecting) {
+              animation.play();
+            } else {
+              animation.pause();
+            }
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    observer.observe(container.value);
+  }
+});
+
+onBeforeUnmount(() => {
+  if (observer && container.value) {
+    observer.unobserve(container.value);
+  }
+  if (animation) {
+    animation.destroy();
   }
 });
 </script>
